@@ -1,3 +1,4 @@
+/* Variables */
 :root{
     --primary-color: #1D3557;
     --secondary-color: #457B9D;
@@ -5,17 +6,15 @@
     --main-section-color: #F1FAEE;
 }
 
+/* Entire Body */
 body{
     margin: 0;
     padding: 0;
     text-align: center;
     color: var(--primary-color);
+    background-color: var(--main-section-color);
 }
 
-section{
-    background: var(--main-section-color);
-
-}
 /* Hero Section */
 .hero{
     background: url(./assets/torshov-image.png);
@@ -53,19 +52,20 @@ section{
 /* Hero Button */
 .cta__btn{
     padding: 15px;
-    border: 3px solid var(--primary-color);
-    background: var(--button-color);
+    border: none;
+    background: var(--primary-color);
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
-    color: rgb(36, 34, 34);
+    color: white;
+    width: 15%;
 }
 
 /* Hero Button Hover */
 .cta__btn:hover{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
 }
 
@@ -73,6 +73,7 @@ section{
 .main__section{
     margin: 30px 0 50px 0;
     padding: 20px;
+    background: var(--main-section-color);
 }
 
 .main__section h2{
@@ -86,21 +87,23 @@ section{
 }
 
 .section__btn{
-    padding: 10px;
+    padding: 15px;
     margin-top: 15px;
-    width: 40%;
-    border: 3px solid var(--primary-color);
-    background-color: var(--button-color);
+    width: 44%;
+    color: var(--main-section-color);
+    background-color: var(--primary-color);
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
+    border: none;
 }
 
 .section__btn:hover{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
 }
 
+/* Services SHhowcase */
 .showcase{
     display: flex;
 }
@@ -122,4 +125,45 @@ section{
 .maskgroup h3{
     width: 38%;
     margin: 15px auto;
+}
+
+/* Tour Guide Profile Section */
+.tour__guide{
+    padding: 70px 0 30px 0;
+    background: white;
+}
+
+.tour__guide__section{
+    display: flex;
+    margin: 0 auto 50px;
+    max-width: 650px;
+    width: 150%;
+    background-color: var(--button-color);
+    padding: 20px;
+    border-bottom: 10px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.tour__guide_photo{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.tour__guide__description{
+    width: 60%;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.tour__guide_heading{
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.tour__guide__name{
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: underline;
 }
